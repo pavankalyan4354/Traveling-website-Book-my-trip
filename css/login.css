@@ -1,0 +1,118 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+ 
+.container {
+    background-color: rgb(19, 162, 177);
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    padding-left:35px ;
+    padding-right: 35px;
+}
+
+.form-container {
+    padding: 40px;
+    flex: 1;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-container label i {
+    position: absolute;
+    left: 10px;
+    color: #777;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container .terms {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-container .terms input {
+    margin-right: 10px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.form-container .already-member {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-container .already-member:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: none;
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+ 
+
+@media (min-width: 768px) {
+    .image-container {
+        display: block;
+    }
+
+     
+}

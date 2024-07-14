@@ -1,0 +1,114 @@
+/* navbar styles */
+.nav-container{
+    width: 100%;
+      
+    background-color: var(--clr-);
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -70px;
+    
+  }
+  .nav-container.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translateY(0%);
+    transition: var(--transition);
+  }
+  .nav-center{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links-main{
+    display: none;
+  }
+  .login{
+    display: none;
+  }
+  .nav-center .logo-section{
+    width: 30px;
+  }
+  .nav-container .login-section {
+    width: 25px;
+    display: flex;
+    
+    justify-self: flex-end ;
+    }
+    /* hamburger position */
+  .hamburger{
+    margin-left: 200px;
+  }
+  .logo-section img{
+    width:90px ;
+  }
+  .hamburger img{
+    width: 50px;
+  }
+  @media screen and (min-width:992px) {
+    .nav-container{
+      min-height: 80px;
+      transition: val(--transition);
+      
+    }
+    .nav-center{
+      grid-template-columns: repeat(3 , 1fr);
+    }
+    .nav-center .logo-section{
+      width: 50px;
+      cursor: pointer;
+    }
+    .nav-container .hamburger{
+      display: none;
+    }
+    .nav-container .nav-links-main{
+      display: flex;
+    }
+    .login{
+      display: flex;
+    }
+    .nav-container .nav-links{
+      display: flex;
+      column-gap: 30px;
+    }
+    .nav-container .nav-link{
+      font-size: 19px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: var(--radius);
+      color: var(--clr-mediam-gray);
+      text-transform: capitalize;
+      
+    }
+    .nav-container .nav-link.active,
+    .nav-container .nav-link:hover{
+      text-transform: var(--transition);
+      background-color: var(--clr-shadow);
+      color: var(--clr-black);
+    }
+    .nav-container .login-section {
+      display: flex;
+       margin-right: 50px;
+       font-size: 19px;
+       font-weight: bold;
+       color: var(--clr-mediam-gray);
+       text-transform: capitalize;
+       padding: 5px 10px;
+       border-radius: 10px;
+        
+    }
+    .login-section :hover{
+      text-transform: var(--transition);
+       
+      color: var(--clr-black);
+    }
+      
+    
+    
+  }
+  
