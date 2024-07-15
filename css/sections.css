@@ -5,6 +5,7 @@
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding-left: 100px;
+  margin-left: -50px;
 }
 
 .feedback-section h2 {
@@ -71,6 +72,12 @@
 
 .feedback-container::-webkit-scrollbar-track {
   background-color: #f9f9f9;
+}
+@media screen and (min-width:992px) {
+  .feedback-section{
+    margin-left: 50px;
+  }
+  
 }
 
 /* feed back styles  end index .html */
@@ -395,7 +402,7 @@ header p {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: var(--clr-);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
     border-radius: 50%;
 }
