@@ -3,188 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Listing</title>
-    <style>
-        /* body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        } */
-        .card-bookung-container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .image-section {
-            flex: 2;
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-        .image-section img {
-            width: 100%;
-            transition: transform 0.3s ease;
-            border-radius: 10px;
-        }
-        .image-section img:hover {
-            transform: scale(1.05);
-        }
-        .details-section {
-            flex: 3;
-            padding: 20px;
-        }
-        .details-section h2 {
-            margin: 0 0 10px;
-        }
-        .details-section .location {
-            color: #007BFF;
-            margin-bottom: 10px;
-        }
-        .details-section .tags button {
-            background-color: #f0f0f0;
-            border: none;
-            padding: 5px 10px;
-            margin-right: 5px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .details-section .tags button:hover {
-            background-color: #007BFF;
-            color: white;
-        }
-        .details-section .offers,
-        .details-section .actions {
-            margin: 10px 0;
-        }
-        .price-section {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-            border-left: 1px solid #ddd;
-        }
-        .price-section .rating {
-            background-color: #007BFF;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .price-section .availability {
-            background-color: #FF0000;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .price-section .discount {
-            color: green;
-            margin-bottom: 10px;
-        }
-        .price-section .original-price {
-            text-decoration: line-through;
-            color: #999;
-        }
-        .price-section .final-price {
-            font-size: 24px;
-            color: #FF5733;
-        }
-        @media (max-width: 768px) {
-        
-          .card-bookung-container {
-                flex-direction: column;
-            }
-            .image-section,
-            .details-section,
-            .price-section {
-                flex: 1;
-                padding: 10px 0;
-            }
-            .price-section {
-                border-left: none;
-                border-top: 1px solid #ddd;
-            }
-        }
-    </style>
+    <title>Dragon Game</title>
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+     </style>
 </head>
 <body>
+    <h1>Welcome to the Dragon Game!</h1>
+    <p>Click the button to slay the dragon!</p>
+    <button id="slayButton">Slay the Dragon</button>
+    <script src="script.js"></script>
+    <script>
+        const slayButton = document.getElementById('slayButton');
 
-<div class="card-bookung-container">
-    <div class="image-section">
-        <img src="https://www.example.com/image.png" alt="Tripoo Potala Palace">
-    </div>
-    <div class="details-section">
-        <h2>Tripoo Potala Palace</h2>
-        <div class="location">
-            <img src="https://www.example.com/location-icon.png" alt="Location Icon"> Central Darjeeling, Darjeeling - <a href="#">View on map</a>
-        </div>
-        <div class="tags">
-            <button>Breakfast</button>
-            <button>Welcome drink</button>
-            <button>Car rental</button>
-            <button>+3</button>
-        </div>
-        <div class="offers">
-            <button>Promoted</button>
-            <button>Boosted</button>
-            <button>Agoda Preferred</button>
-        </div>
-        <div class="actions">
-            <a href="#">Book without a credit card</a><br>
-            Cashback Rewards: Rs. 55<br>
-            Coupon Code WEEKENDSALE applied - Rs. 33 off!
-        </div>
-    </div>
-    <div class="price-section">
-        <div class="rating">Very good <span>7</span> - 108 reviews</div>
-        <div class="availability">ONLY 2 LEFT</div>
-        <div class="discount">Price has dropped by 32%</div>
-        <div class="original-price">Rs. 4,972</div>
-        <div class="original-price">Rs. 1,087</div>
-        <div class="final-price">Rs. 1,032</div>
-    </div>
-</div>
-<div class="card-bookung-container">
-    <div class="image-section">
-        <img src="https://www.example.com/image.png" alt="Tripoo Potala Palace">
-    </div>
-    <div class="details-section">
-        <h2>Tripoo Potala Palace</h2>
-        <div class="location">
-            <img src="https://www.example.com/location-icon.png" alt="Location Icon"> Central Darjeeling, Darjeeling - <a href="#">View on map</a>
-        </div>
-        <div class="tags">
-            <button>Breakfast</button>
-            <button>Welcome drink</button>
-            <button>Car rental</button>
-            <button>+3</button>
-        </div>
-        <div class="offers">
-            <button>Promoted</button>
-            <button>Boosted</button>
-            <button>Agoda Preferred</button>
-        </div>
-        <div class="actions">
-            <a href="#">Book without a credit card</a><br>
-            Cashback Rewards: Rs. 55<br>
-            Coupon Code WEEKENDSALE applied - Rs. 33 off!
-        </div>
-    </div>
-    <div class="price-section">
-        <div class="rating">Very good <span>7</span> - 108 reviews</div>
-        <div class="availability">ONLY 2 LEFT</div>
-        <div class="discount">Price has dropped by 32%</div>
-        <div class="original-price">Rs. 4,972</div>
-        <div class="original-price">Rs. 1,087</div>
-        <div class="final-price">Rs. 1,032</div>
-    </div>
-</div>
+slayButton.addEventListener('click', () => {
+    alert('You have slain the dragon! Congratulations!');
+});
 
+    </script>
 </body>
 </html>

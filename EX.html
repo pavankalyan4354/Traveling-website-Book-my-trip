@@ -2,54 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Search</title>
+    <title>Word Meaning AI</title>
     <style>
-        /* Basic styling for the search form */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .search-form {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="text"],
-        select,
-        button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        button {
-            background-color: #0074D9;
-            color: #fff;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#wordMeaning {
+    margin-top: 20px;
+}
+
     </style>
 </head>
 <body>
-    <div class="search-form">
-        <h2>Hotel Search</h2>
-        <form>
-            <input type="text" id="search-input" placeholder="Search hotels...">
-            <input type="date" id="date-input">
-            <select id="location-dropdown">
-                <option value="city">City</option>
-                <option value="state">State</option>
-                <option value="location">Location</option>
-                <option value="airport">Airport</option>
-            </select>
-            <button type="submit">Search</button>
-        </form>
-    </div>
+    <header>
+        <h1>Word Meaning AI</h1>
+    </header>
+    <main>
+        <input type="text" id="wordInput" placeholder="Enter a word">
+        <button onclick="getWordMeaning()">Get Meaning</button>
+        <div id="wordMeaning"></div>
+    </main>
+    <script>
+        // script.js
+function getWordMeaning() {
+    const word = document.getElementById('wordInput').value;
+    // Call AI service or API to get word meaning and description
+    const meaning = `Meaning of ${word}: Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
+    document.getElementById('wordMeaning').innerText = meaning;
+}
+
+    </script>
 </body>
 </html>
